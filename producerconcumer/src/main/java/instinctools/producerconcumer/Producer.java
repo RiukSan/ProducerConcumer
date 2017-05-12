@@ -25,30 +25,8 @@ public class Producer implements Runnable {
 			try {
 				Thread.sleep(new Long(new Random().nextInt(4000)));
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			//logger.info("Producer " + num + " has put one. Left: " + store.getCount());
-			/*try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}*/
-			/*synchronized (this) {
-				if (!store.isFull()) {
-					store.put();
-					logger.info("Producer " + num + " has put one. Left: " + store.getCount());
-					notifyAll();
-				} else {
-					try {
-						this.wait();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-						break;
-					}
-				}
-			}*/
 		}
 	}
 
