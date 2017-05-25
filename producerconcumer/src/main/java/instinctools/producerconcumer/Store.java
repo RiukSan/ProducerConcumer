@@ -3,7 +3,9 @@ package instinctools.producerconcumer;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-public class Store {
+
+//Можно было создать интерфейс хранилища с методами take put, и передавать в Consumer и Producer по интерфейсу.
+public class Store { //Single Responsibility Principle выполнен
 
 	private volatile Integer count;
 	private Logger logger = LogManager.getLogger("Logger");

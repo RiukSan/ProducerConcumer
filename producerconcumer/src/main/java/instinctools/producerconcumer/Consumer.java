@@ -5,11 +5,12 @@ import java.util.Random;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-public class Consumer implements Runnable {
+//Можно было создать интерфейс участника, этот интерфейс реализовали бы Concumer и Producer.
+public class Consumer implements Runnable { //Single Responsibility Principle выполнен
 
 	private Store store;
 	private String num;
-	private Logger logger = LogManager.getLogger("Logger");
+	private Logger logger = LogManager.getLogger("Logger"); 
 
 	public Consumer(Store store, String num) {
 		this.store = store;

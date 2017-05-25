@@ -5,6 +5,8 @@ import org.apache.log4j.BasicConfigurator;
 public class Main {
 
 	public static void main(String[] args) {
+		//Producer и Concumer создавались бы по интерфейсу участника и уже в операторе new выбиралась бы конкретная реализация
+		//Факт, что разбитие на интерфейсы не было сделано, можно считать как реализация по принципу YAGNI.
 		BasicConfigurator.configure();
 		Store store = new Store(10);
 		Producer producer1 = new Producer(store, "1");

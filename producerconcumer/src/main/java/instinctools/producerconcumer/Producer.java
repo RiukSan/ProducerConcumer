@@ -8,7 +8,8 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-public class Producer implements Runnable {
+//Можно было создать интерфейс участника, этот интерфейс реализовали бы Concumer и Producer.
+public class Producer implements Runnable { //Single Responsibility Principle выполнен
 
 	private Store store;
 	private String num;
